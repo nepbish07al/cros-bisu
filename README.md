@@ -9,7 +9,8 @@ https://github.com/sebanc/brunch
 >sudo add-apt-repository universe
 
 >lsblk -e7
- -lists out the disks information
+
+ usuage:lists out the disks information
 
 **For full disk installation/ installing in the pendrive**
 
