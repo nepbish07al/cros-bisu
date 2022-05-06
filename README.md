@@ -7,13 +7,14 @@ https://github.com/sebanc/brunch
 >sudo apt update && sudo apt -y install pv cgpt tar unzip
 
 >sudo add-apt-repository universe
+
 >lsblk -e7
  -lists out the disks information
 
 **For full disk installation/ installing in the pendrive**
 
 Go to the folder where you have your extracted file, open it in the terminal and enter this command:
-_replace **"disk"** with the disk name **e.g: sda6** 
+_replace_ **"disk"** with the disk name **e.g: sda6** 
 
 I hope you have known name of your disk  :' _
 
@@ -28,6 +29,7 @@ I hope you have known name of your disk  :' _
 replace **part** with the name of your disk where you want to install chromeOS
 
 usage: Supoose you want to install it in **sda7** then your command will be like this:
+
 >sudo mount /dev/**sda6** ~/tmpmount
 
 >sudo bash chromeos-install.sh -src chromeos_filename.bin -dst ~/tmpmount/chromeos.img -s size
@@ -40,6 +42,7 @@ example:
 Copy both of the menu entry which will be inside ******
 
 Editing thr grub bootloader to add ChromeOS as a option, type the following commands respectively
+
 >sudo cp /etc/grub.d/40_custom /etc/grub.d/99_brunch
 
 >sudo nano /etc/grub.d/99_brunch
@@ -69,6 +72,7 @@ Rename brunch file as **brunch_archive.tar.gz** and chromeOS bin fine as **recov
 Copy those renamed file into Downloads if it is not there
 
 type this command:
+
 >sudo chromeos-update -r ~/Downloads/recovery.bin -f ~/Downloads/brunch_archive.tar.gz
 
 >sudo chromeos-update -f ~/Downloads/brunch_archive.tar.gz
