@@ -1,8 +1,10 @@
 **CHEAT SHEET FOR ChromeOS installation**
 
+Recommended to read this guide before you start:
+
+https://github.com/sebanc/brunch
+
 **_Requirements:_**
-<details>
-  <summary> ### Requirements </summary>
 
 - Root access.
 - Target Disk/USB must be 16gb minimum.
@@ -30,10 +32,7 @@ After selecting the recovery you want, you can select a specific release. Posted
 ### Gathering Files
 2. Download the Brunch files from this GitHub repository. Do not use files found on other sites or linked in videos online. The [releases tab][releases-tab] can be found at the bottom of the right-hand column on the main GitHub page, but it is generally suggested to use the [latest release][latest-release].
 
-
-Recommended to read this guide before you start:
-
-https://github.com/sebanc/brunch
+**Open the terminal and begin the process:**
 
 >sudo apt update && sudo apt -y install pv cgpt tar unzip
 
