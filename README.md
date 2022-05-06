@@ -17,7 +17,7 @@ https://github.com/sebanc/brunch
 Go to the folder where you have your extracted file, open it in the terminal and enter this command:
 _replace_ **"disk"** with the disk name **e.g: sda6** 
 
-I hope you have known name of your disk  :' _
+I hope you have known name of your disk  :
 
 >sudo bash chromeos-install.sh -src chromeos_filename.bin -dst /dev/**disk**
 
@@ -42,7 +42,9 @@ example:
 
 Copy both of the menu entry which will be inside ******
 
-Editing thr grub bootloader to add ChromeOS as a option, type the following commands respectively
+**Editing the grub bootloader to add ChromeOS as a option**
+
+type the following commands respectively
 
 >sudo cp /etc/grub.d/40_custom /etc/grub.d/99_brunch
 
