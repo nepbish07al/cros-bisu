@@ -7,11 +7,12 @@ https://github.com/sebanc/brunch
 **_Requirements:_**
 
 - Root access.
-- Target Disk/USB must be 16gb minimum.
+- for **USB** installation: Target Disk/USB must be 16gb minimum.
 - `pv`, `tar`, `unzip` and `cgpt` packages.
 - A [compatible PC][compatibility] to boot Brunch on.
 - An entry level understanding of the linux terminal.
   - This guide aims to make this process as easy as possible, but knowing the basics is expected.
+### Gathering Files
 
 ### Recoveries
 1. Download a recovery suitable for your CPU. The list below can help you select one. You do *not* need to select a recovery that matches the latest Brunch release number, the most recent avaliable is typically fine.
@@ -29,7 +30,6 @@ Recoveries can be found by clicking the above links. They can also be found by g
 
 After selecting the recovery you want, you can select a specific release. Posted releases may be behind the current release, this is normal and you can update into the current release later. It is usually suggested to use the latest release avaliable.
 
-### Gathering Files
 2. Download the Brunch files from this GitHub repository. Do not use files found on other sites or linked in videos online. The [releases tab][releases-tab] can be found at the bottom of the right-hand column on the main GitHub page, but it is generally suggested to use the [latest release][latest-release].
 
 **Open the terminal and begin the process:**
