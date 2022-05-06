@@ -4,14 +4,6 @@ Recommended to read this guide before you start:
 
 https://github.com/sebanc/brunch
 
-**_Requirements:_**
-
-- Root access.
-- for **USB** installation: Target Disk/USB must be 16gb minimum.
-- `pv`, `tar`, `unzip` and `cgpt` packages.
-- A compatible PC,  to boot Brunch on.
-- An entry level understanding of the linux terminal.
-  - This guide aims to make this process as easy as possible, but knowing the basics is expected.
 ### Gathering Files
 
 ### Recoveries
