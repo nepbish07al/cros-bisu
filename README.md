@@ -16,23 +16,18 @@ https://github.com/sebanc/brunch
 
 ### Recoveries
 1. Download a recovery suitable for your CPU.
+[cros.tech](cros.tech)
 
-Recoveries can be found by clicking the above links. They can also be found by going to [cros.tech](cros.tech) and searching for the recovery you want.
-
-The list below can help you select one. You do *not* need to select a recovery that matches the latest Brunch release number, the most recent avaliable is typically fine.
-  
-#### Intel
+#### For Intel
 * "rammus" is suggested for 1st gen -> 9th gen
 * "volteer" is suggested for 10th & 11th gen
 *   * 11th gen (and some 10th gen) may need kernel 5.10 
-#### AMD
+#### For AMD
 * "grunt" is suggested for Stoney Ridge & Bristol Ridge
 * "zork" is suggested for Ryzen
   * Ryzen 4xxx devices need kernel 5.10]
 
-After selecting the recovery you want, you can select a specific release. Posted releases may be behind the current release, this is normal and you can update into the current release later. It is usually suggested to use the latest release avaliable.
-
-2. Download the Brunch files from this GitHub repository [latest-release](https://github.com/sebanc/brunch/releases/latest)
+2. Download the **Brunch** files from this GitHub repository [latest-release](https://github.com/sebanc/brunch/releases/latest)
 
 **Open the terminal and begin the process:**
 
