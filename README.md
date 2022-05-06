@@ -127,9 +127,9 @@ This has been successful for fixing the Crostini Linux install failure in Chrome
 **For mic fix**
 
 Open the crosh shell (ctrl + alt + t) and enter shell at the prompt.
- 
->sudo mkdir -p /var/brunch/bootscripts
 
-Download the file attached to this post
+Download the file attached to this post and type the following code in terminal
+
+>sudo mkdir -p /var/brunch/bootscripts
 
 >sudo cp ~/Downloads/amixer_mic_fix.sh /var/brunch/bootscripts
