@@ -32,7 +32,7 @@ The list below can help you select one. You do *not* need to select a recovery t
 
 After selecting the recovery you want, you can select a specific release. Posted releases may be behind the current release, this is normal and you can update into the current release later. It is usually suggested to use the latest release avaliable.
 
-2. Download the Brunch files from this GitHub repository
+2. Download the Brunch files from this GitHub repository [latest-release](https://github.com/sebanc/brunch/releases/latest)
 
 **Open the terminal and begin the process:**
 
