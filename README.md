@@ -1,4 +1,4 @@
-**CHEAT SHEET FOR ChromeOS installation**
+**CHEAT SHEET FOR ChromeOS installation for linux user (debian based)**
 
 Recommended to read this guide before you start:
 
@@ -37,7 +37,8 @@ Go to the folder where you have your extracted file,
 
 **Rename chromeosXXXX(sth).bin file to recovery.bin**
 
-open the in the terminal and enter this command:
+while still being in that folder, right click on any free space to open **menu**, you will see one option which says: **open in terminal**
+Do that
 
 **DO NOTE** in the command: _replace_ **"disk"** with the disk name **e.g: sda6** 
 
