@@ -23,55 +23,68 @@ https://github.com/sebanc/brunch
 
 **Open the terminal and begin the process:**
 
->sudo apt update && sudo apt -y install pv cgpt tar unzip
+`sudo apt update && sudo apt -y install pv cgpt tar unzip`
 
->sudo add-apt-repository universe
+`sudo add-apt-repository universe`
 
->lsblk -e7
+`lsblk -e7
 
  usuage:lists out the disks information
 
 **For full disk installation/ installing in the pendrive**
 
-Go to the folder where you have your extracted file, open it in the terminal and enter this command:
-_replace_ **"disk"** with the disk name **e.g: sda6** 
+Go to the folder where you have your extracted file,
 
-I hope you have known name of your disk  :
+**Rename chromeosXXXX(sth).bin file to recovery.bin**
 
->sudo bash chromeos-install.sh -src chromeos_filename.bin -dst /dev/**disk**
+open the in the terminal and enter this command:
+
+**DO NOTE** in the command: _replace_ **"disk"** with the disk name **e.g: sda6** 
+
+I hope you have known name of your disk from above `lsblk -e7` command
+
+`sudo bash chromeos-install.sh -src recovery.bin -dst /dev/**disk**`
+
+
 
 **FOR DUAL BOOTING**
 
->mkdir -p ~/tmpmount
+`mkdir -p ~/tmpmount`
 
->sudo mount /dev/part ~/tmpmount
+**DO NOTE** in the command: replace **part** with the name of your disk where you want to install chromeOS
 
-replace **part** with the name of your disk where you want to install chromeOS
+`sudo mount /dev/part ~/tmpmount`
 
-usage: Supoose you want to install it in **sda7** then your command will be like this:
+HINT: Supoose you want to install it in **sda7** then your command will be like this:
 
->sudo mount /dev/**sda6** ~/tmpmount
+`sudo mount /dev/**sda6** ~/tmpmount`
 
->sudo bash chromeos-install.sh -src chromeos_filename.bin -dst ~/tmpmount/chromeos.img -s size
+>**DO NOTE:** in the command here replace **size** with your disk size info, but keep the number slightly less than the available one: 
 
-Here replace **size** with your disk size info, but keep the number slightly less than the available one: for eg: if your disk size is 75GB then put size little lower than that
+for eg: if your disk size is 75GB then put size little lower than that
+
+`sudo bash chromeos-install.sh -src recovery.bin -dst ~/tmpmount/chromeos.img -s size`
 
 example:
->sudo bash chromeos-install.sh -src chromeos_filename.bin -dst ~/tmpmount/chromeos.img -s **64**
+>sudo bash chromeos-install.sh -src chromeos_filename.bin -dst ~/tmpmount/chromeos.img -s **64**`
 
-Copy both of the menu entry which will be inside ******
+Copy both of the menu entry which will be inside ****** 
+
+To copy anything from terminal always use **Ctrl + shift + C**  If you do **Ctrl + C** in the terminal, it ends the current process of the terminal
 
 **Editing the grub bootloader to add ChromeOS as a option**
 
 type the following commands respectively
 
->sudo cp /etc/grub.d/40_custom /etc/grub.d/99_brunch
+`sudo cp /etc/grub.d/40_custom /etc/grub.d/99_brunch`
 
->sudo nano /etc/grub.d/99_brunch
+`sudo nano /etc/grub.d/99_brunch`
+ 
+ HINT: press **Ctrl + O** to save the file and press Enter and press **Ctrl + X** to exit
+ 
+`sudo update-grub` 
 
->sudo update-grub
-
->sudo umount ~/tmpmount
+`sudo umount ~/tmpmount`
 
 #chromeOS will be now installed
 
@@ -79,7 +92,7 @@ type the following commands respectively
 
 The Brunch Configuration Menu can be accessed directly from Grub using the "ChromeOS (settings)" boot option or while logged into ChromeOS using the following command in crosh shell:
 
->sudo edit-brunch-config 
+`sudo edit-brunch-config `
 
 To access the crosh shell, press **Ctrl + Alt + T** in chrome browser
 
@@ -95,9 +108,9 @@ Copy those renamed file into Downloads if it is not there
 
 type this command:
 
->sudo chromeos-update -r ~/Downloads/recovery.bin -f ~/Downloads/brunch_archive.tar.gz
+`sudo chromeos-update -r ~/Downloads/recovery.bin -f ~/Downloads/brunch_archive.tar.gz`
 
->sudo chromeos-update -f ~/Downloads/brunch_archive.tar.gz
+`sudo chromeos-update -f ~/Downloads/brunch_archive.tar.gz`
 
 Restart ChromeOS after the update finishes
 
@@ -117,6 +130,6 @@ Open the crosh shell (ctrl + alt + t) and enter shell at the prompt.
 
 Download the file attached to this post and type the following code in terminal
 
->sudo mkdir -p /var/brunch/bootscripts
+`sudo mkdir -p /var/brunch/bootscripts`
 
 >sudo cp ~/Downloads/amixer_mic_fix.sh /var/brunch/bootscripts
