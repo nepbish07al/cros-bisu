@@ -27,7 +27,7 @@ https://github.com/sebanc/brunch
 
 `sudo add-apt-repository universe`
 
-`lsblk -e7
+`lsblk -e7`
 
  usuage:lists out the disks information
 
