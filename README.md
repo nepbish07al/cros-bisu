@@ -1,9 +1,10 @@
 <h1> CHEAT SHEET of ChromeOS installation for linux user (debian based) </h1>
 
-[Orginal repo](https://github.com/sebanc/brunch)
+This is Not a detailed guide , I actually made this because i felt lazy to go to original repo and read
 
-### Recoveries
-[cros.tech](cros.tech)
+Detailed guide can be found here: [Orginal repo](https://github.com/sebanc/brunch)
+
+1. Download recovery bin: [cros.tech](cros.tech)
 
 2. Download the **Brunch** file: [latest-release](https://github.com/sebanc/brunch/releases/latest)
 
@@ -15,11 +16,7 @@
 
 `lsblk -e7`
 
- usuage:lists out the disks information
-
-**For full disk installation/ installing in the pendrive**
-
-Go to the folder where you have your extracted file,
+ lists out the disks information
 
 **Rename chromeosXXXX(sth).bin file to recovery.bin**
 
