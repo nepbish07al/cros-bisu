@@ -1,25 +1,11 @@
-**CHEAT SHEET FOR ChromeOS installation for linux user (debian based)**
+<h1> CHEAT SHEET of ChromeOS installation for linux user (debian based) </h1>
 
-Recommended to read this guide before you start:
-
-https://github.com/sebanc/brunch
-
-### Gathering Files
+[Orginal repo](https://github.com/sebanc/brunch)
 
 ### Recoveries
-1. Download a recovery suitable for your CPU.
 [cros.tech](cros.tech)
 
-#### For Intel
-* "rammus" is suggested for 1st gen -> 9th gen
-* "volteer" is suggested for 10th & 11th gen
-*   * 11th gen (and some 10th gen) may need kernel 5.10 
-#### For AMD
-* "grunt" is suggested for Stoney Ridge & Bristol Ridge
-* "zork" is suggested for Ryzen
-  * Ryzen 4xxx devices need kernel 5.10]
-
-2. Download the **Brunch** files from this GitHub repository [latest-release](https://github.com/sebanc/brunch/releases/latest)
+2. Download the **Brunch** file: [latest-release](https://github.com/sebanc/brunch/releases/latest)
 
 **Open the terminal and begin the process:**
 
@@ -88,6 +74,7 @@ type the following commands respectively
 `sudo umount ~/tmpmount`
 
 #chromeOS will be now installed
+
 
 **After booting:**
 
